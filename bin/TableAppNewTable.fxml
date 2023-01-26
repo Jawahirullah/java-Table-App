@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="318.0" prefWidth="463.0" style="-fx-border-width: .5; -fx-border-color: #555;" styleClass="holder" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TableAppNewTableController">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="200.0" styleClass="sideview" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="7.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="14.0" prefHeight="26.0" prefWidth="378.0" spacing="10.0" AnchorPane.bottomAnchor="255.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="14.0">
+               <children>
+                  <Label alignment="BOTTOM_LEFT" prefHeight="26.0" prefWidth="142.0" styleClass="lbl-enter-table-name" text="ENTER TABLE NAME :" textFill="#9077f7" translateY="2.0" HBox.hgrow="NEVER">
+                     <font>
+                        <Font name="Roboto Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="tfTableName" alignment="BOTTOM_CENTER" minHeight="-Infinity" prefHeight="26.0" prefWidth="209.0" styleClass="password-field">
+                     <font>
+                        <Font name="Roboto" size="17.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <StackPane layoutX="159.0" layoutY="254.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="27.5" prefWidth="132.0" AnchorPane.bottomAnchor="10.0">
+               <children>
+                  <Button maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#createTable" prefHeight="27.5" prefWidth="121.0">
+                     <styleClass>
+                        <String fx:value="btn-new-table" />
+                        <String fx:value="btn-no-border-radius" />
+                     </styleClass>
+                  </Button>
+                  <Label mouseTransparent="true" styleClass="txt-new-table" text="CREATE TABLE" />
+               </children>
+            </StackPane>
+            <ScrollPane hbarPolicy="NEVER" layoutX="32.0" layoutY="51.0" prefWidth="200.0" styleClass="round-scroll" AnchorPane.bottomAnchor="70.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="52.0">
+               <content>
+                  <FlowPane fx:id="parent" alignment="TOP_CENTER" columnHalignment="CENTER" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="179.0" prefWidth="406.0" rowValignment="TOP" vgap="4.0">
+                     <padding>
+                        <Insets left="14.0" top="10.0" />
+                     </padding>
+                  </FlowPane>
+               </content>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </ScrollPane>
+            <StackPane layoutX="303.0" layoutY="165.0" minHeight="-Infinity" prefHeight="26.0" prefWidth="31.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="15.0">
+               <children>
+                  <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#addNewRow" prefHeight="25.0" prefWidth="25.0" styleClass="add-more" StackPane.alignment="CENTER" />
+                  <MaterialIconView fill="WHITE" glyphName="ADD" mouseTransparent="true" size="20" textOrigin="TOP" translateX="-0.4" StackPane.alignment="CENTER" />
+               </children>
+            </StackPane>
+            <Label fx:id="errorMsg" layoutX="16.0" layoutY="240.0" prefHeight="20.0" prefWidth="408.0" styleClass="error-label" AnchorPane.bottomAnchor="42.5" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

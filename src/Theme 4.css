@@ -1,0 +1,18 @@
+.root{
+    -fx-main-color: #374036;  
+    -fx-primary-holder-color: #D9674e;
+    -fx-secondary-holder-color: #deeff1;
+    -fx-list-view-color: #d93611;
+    -fx-btn-color: #8c6658;
+    -fx-btn-color: rgb(56, 119, 138);
+    -fx-table-header-color: rgb(60, 60, 60);
+}
+
+
+ /* set proper color for toolbar icons when clicked
+ colors to button
+ colors to scroll bar of table
+ provide shape to arrow of scroll bar 
+ remove border of scene in tableAppNewTAble dialog
+ set color to eye icon
+ remove set theme functionality */
